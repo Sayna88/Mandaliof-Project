@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.icon-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-section {
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.full-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.right-section {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: white;
+}
+
+.login-box {
+    text-align: center;
+    background: rgba(39, 24, 124, 0.404);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(56, 3, 250, 0.918);
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputField {
+    padding: 6px;
+    outline-color: rgb(15, 60, 68);
+    width: 230px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.passwordContainer {
+    position: relative;
+    width: 200px;
+}
+
+.togglePassword {
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+}
+
+.loginButton{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background-color: rgb(51, 33, 73);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(105, 0, 224);
+}

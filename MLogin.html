@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page of Jadval Tanavobii Site</title>
+    <link rel="stylesheet" href="MLogin.css">
+    <script src="https://kit.fontawesome.com/bc8ca4f49d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-section">
+                <iframe src="MLoginan.html" class="full-frame"></iframe>
+        </div>
+
+        <div class="right-section">
+            <div class="login-box">
+                <div class="icon-text">
+                    <i class="fa-solid fa-microscope"></i>
+                    <span class="bold-text">سایت جدول تناوبی (مندلیف)</span>
+                </div>
+                <div class="loginPage">
+                    <h1 class="title">ورود</h1>
+                    <form class="loginForm" action="MJadval.html"">
+                        <input class="inputField" type="text" id="fullName" placeholder="                                 ...نام و نام خانوادگی" required>
+                        <input class="inputField" type="email" id="email" placeholder="                                                ...ایمیل" required>
+
+                        <div class="passwordContainer">
+                            <input class="inputField" id="password" type="password" placeholder="                                          ...رمز" required>
+                            <i class="fa-solid fa-eye-slash togglePassword" id="toggle-password"></i>
+                        </div>
+
+                        <button class="loginButton" type="submit">ورود</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const togglePassword = document.getElementById("toggle-password");
+        const passwordField = document.getElementById("password");
+
+        togglePassword.addEventListener("click", function () {
+            const isPassword = passwordField.getAttribute("type") === "password";
+            passwordField.setAttribute("type", isPassword ? "text" : "password");
+
+            if (isPassword) {
+                this.classList.remove("fa-eye-slash");
+                this.classList.add("fa-eye");
+            } else {
+                this.classList.remove("fa-eye");
+                this.classList.add("fa-eye-slash");
+            }
+        });
+
+    </script>
+
+
+</body>
+</html>
